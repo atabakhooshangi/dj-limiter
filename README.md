@@ -1,5 +1,5 @@
 
-# Django Rate Limiter
+# DJ-Limiter
 
 A simple and configurable rate limiting middleware for Django applications to control the rate at which requests are processed.
 
@@ -14,13 +14,13 @@ A simple and configurable rate limiting middleware for Django applications to co
 You can install the package using pip:
 
 ```bash
-pip install django-rate-limiter
+pip install dj-limiter
 ```
 
 Or if you are using Poetry:
 
 ```bash
-poetry add django-rate-limiter
+poetry add dj-limiter
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ Add the middleware to your Django settings by updating the `MIDDLEWARE` list in 
 ```python
 MIDDLEWARE = [
     # ... other middleware ...
-    'rate_limiter.middleware.RateLimitingMiddleware',
+    'dj_limiter.middleware.RateLimitingMiddleware',
 ]
 ```
 
@@ -55,7 +55,7 @@ Here's an example of how to configure and use the middleware in a Django project
 1. Install the package:
 
     ```bash
-    pip install django-rate-limiter
+    pip install dj-limiter
     ```
 
 2. Update your `settings.py` to include the middleware and configure the rate limits:
@@ -63,7 +63,7 @@ Here's an example of how to configure and use the middleware in a Django project
     ```python
     MIDDLEWARE = [
         # ... other middleware ...
-        'rate_limiter.middleware.RateLimitingMiddleware',
+        'dj_limiter.middleware.RateLimitingMiddleware',
     ]
 
     RATE_LIMIT = 100
@@ -79,8 +79,8 @@ Here's an example of how to configure and use the middleware in a Django project
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/django-rate-limiter.git
-    cd django-rate-limiter
+    git clone https://github.com/yourusername/dj-limiter.git
+    cd dj-limiter
     ```
 
 2. Install dependencies using Poetry:
@@ -89,13 +89,6 @@ Here's an example of how to configure and use the middleware in a Django project
     poetry install
     ```
 
-### Running Tests
-
-Run the tests using pytest:
-
-```bash
-poetry run pytest
-```
 
 ## Contributing
 
